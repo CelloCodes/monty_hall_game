@@ -1,5 +1,6 @@
 import styles from '../styles/Door.module.css'
 import DoorModel from '../models/Door'
+import Prize from "./Prize";
 
 interface DoorProps {
     value: DoorModel
@@ -28,7 +29,10 @@ export default function Door(props: DoorProps) {
     return (
         <div className={styles.area} onClick={switch_selection}>
             <div className={`${styles.doorframe} ${selected}`}>
-                {door.open ? false : render_door()}
+                {!door.open ?
+                    render_door() :
+                    door.has_prize ? <Prize/> : false
+                }
             </div>
             <div className={styles.floor}></div>
         </div>
