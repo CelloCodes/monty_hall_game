@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export default function Home() {
     const [door_amount, set_door_amount] = useState(3)
-    const [prized_door, set_prized_door] = useState(1)
+    const [prize_door, set_prize_door] = useState(1)
 
     return (
         <div className={styles.form}>
@@ -22,11 +22,12 @@ export default function Home() {
             </div>
             <div>
                 <Card>
-                    <NumberInput text={"Prized Door"} value={prized_door}
-                                 onChange={new_prized_door => set_prized_door(new_prized_door)} />
+                    <NumberInput text={"Prize Door"} value={prize_door}
+                                 type={"position"}
+                                 onChange={new_prize_door => set_prize_door(new_prize_door)} />
                 </Card>
                 <Card bgcolor={"#567e32"}>
-                    <Link href={`/game/${door_amount}/${prized_door}`}>
+                    <Link href={`/game/${door_amount}/${prize_door}`}>
                         <h2 className={styles.link}>Start</h2>
                     </Link>
                 </Card>

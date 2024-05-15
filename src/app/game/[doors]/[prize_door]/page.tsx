@@ -12,8 +12,8 @@ export default function game() {
     const pathname = usePathname()
     useEffect(() => {
         const door_amount = +pathname.split('/')[2]
-        const prized_door = +pathname.split('/')[3]
-        setDoors(create_doors(door_amount, prized_door))
+        const prize_door = +pathname.split('/')[3]
+        setDoors(create_doors(door_amount, prize_door))
     }, [pathname])
 
     function render_doors() {
