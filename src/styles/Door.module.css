@@ -6,6 +6,7 @@
     height: var(--area-door-height);
     width: var(--area-door-width);
     margin: 5px;
+    cursor: pointer;
 }
 
 .doorframe {
@@ -47,6 +48,10 @@
     background-color: brown;
 }
 
+.handle:hover {
+    background-color: white;
+}
+
 .selected {
     border-left: 5px solid yellow;
     border-top: 5px solid yellow;
@@ -59,4 +64,8 @@
 
 .selected .handle {
     background-color: yellow;
+}
+
+.selected .handle:hover {
+    background-color: white;
 }

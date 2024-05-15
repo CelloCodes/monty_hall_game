@@ -1,0 +1,39 @@
+.number_input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.text {
+    color: grey;
+    font-size: 1.5rem;
+}
+
+.value {
+    font-size: 6rem;
+}
+
+.buttons {
+    display: flex;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+    border: none;
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+}
+
+.limit {
+    color: #ddd;
+    cursor: initial;
+}
