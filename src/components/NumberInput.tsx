@@ -4,15 +4,16 @@ import format_position from '../functions/number_input.js'
 interface NumberInputProps {
     text: string
     value: number
-    type: string
+    max_value: number
+    type?: string
     onChange: (new_value: number) => void
 }
 
 export default function NumberInput(props: NumberInputProps) {
-    const upper_limit = props.value >= 16 ? styles.limit : false
+    const upper_limit = props.value >= props.max_value ? styles.limit : false
     const lower_limit = props.value <= 1 ? styles.limit : false
     const dec = () => props.onChange(props.value > 1 ? props.value - 1 : props.value)
-    const inc = () => props.onChange(props.value < 16 ? props.value + 1 : props.value)
+    const inc = () => props.onChange(props.value < props.max_value ? props.value + 1 : props.value)
 
     let value = props.value
     let dec_symbol = '-'
