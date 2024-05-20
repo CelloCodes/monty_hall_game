@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Monty Hall Paradox Minigame
 
-## Getting Started
+Welcome to the Monty Hall Paradox Minigame! This web application simulates the famous probability puzzle known as the Monty Hall problem. The game is built with HTML, CSS, JavaScript, React, and Next.js.
 
-First, run the development server:
+## 🕹️ About the Game
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The Monty Hall problem is a brain teaser, in the form of a probability puzzle, loosely based on the American television game show "Let's Make a Deal" and named after its original host, Monty Hall. It is also famous in Brazil through it's satire adaptation know as Porta dos Desesperados that was played with children on a TV show, where one of the doors had a prize but the others had monsters or animals to scare the children.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### How to Play
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+A regular instance of the problem revolves around 3 doors, of which one contain a prize, but the number of doors in the game can be increased up to 16 for demonstration purposes.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Choose a Door**: There are three doors, behind one of which is a prize. The player chooses one of the doors.
+2. **Host Reveals a Door**: After the player chooses a door, the host, who knows what's behind each door, opens one of the doors. 
+3. **Decide to Switch or Stay**: The player is given a choice to stick with the original door or switch to the remaining unopened door.
+4. **Win or Lose**: The door choosen by the player is opened to reveal whether they have won the game or not.
 
-## Learn More
+The game demonstrates that switching doors gives you a higher probability of winning the car. More on that topic can be seen in the wiki page of the [Monty Hall Problem](https://en.wikipedia.org/wiki/Monty_Hall_problem).
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<!-- - **Interactive Gameplay**: Choose a door and decide whether to switch or stay. -->
+<!-- - **Probability Display**: Shows the probability of winning if you switch versus if you stay. -->
+<!-- - **Responsive Design**: Works on both desktop and mobile devices. -->
+- **Educational**: Learn about the Monty Hall paradox through play.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🛠️ Technologies Used
 
-## Deploy on Vercel
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **React**
+- **Next.js**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📦 Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To run the application locally, follow these steps:
+
+1. **Clone the repository**:
+    ```bash
+    git clone git@github.com:marceloemr/monty_hall_game.git
+    cd monty_hall_game
+    ```
+
+2. **Install dependencies**:
+    ```bash
+    npm install
+    ```
+
+3. **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+
+4. Open your browser and navigate to `http://localhost:3000`.
