@@ -4,7 +4,7 @@ Welcome to the Monty Hall Paradox Minigame! This web application simulates the f
 
 ## 🕹️ About the Game
 
-The Monty Hall problem is a brain teaser, in the form of a probability puzzle, loosely based on the American television game show "Let's Make a Deal" and named after its original host, Monty Hall. It is also famous in Brazil through it's satire adaptation know as Porta dos Desesperados that was played with children on a TV show, where one of the doors had a prize but the others had monsters or animals to scare the children.
+The Monty Hall problem is an interesting way to teach probability through a fun game, based on the American television game show "Let's Make a Deal" and named after its original host, Monty Hall. It is also famous in Brazil through it's satire adaptation know as "Porta dos Desesperados" that was played with children on a TV show, where one of the doors had a prize but the others had monsters or animals to scare the children.
 
 ### How to Play
 
